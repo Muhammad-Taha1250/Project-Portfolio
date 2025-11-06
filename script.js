@@ -311,25 +311,3 @@ function setActiveNavLink() {
 
 setActiveNavLink();
 
-// ==================== Digital Clock Alternative ====================
-// Uncomment this if you want a digital clock instead of session timer
-/*
-function updateClock() {
-    const now = new Date();
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
-    
-    const timerElement = document.getElementById('timer');
-    if (timerElement) {
-        timerElement.textContent = `${hours}:${minutes}:${seconds}`;
-    }
-}
-
-function startClock() {
-    updateClock();
-    setInterval(updateClock, 1000);
-}
-
-window.addEventListener('load', startClock);
-*/
